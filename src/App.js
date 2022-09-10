@@ -2,26 +2,14 @@ import React from 'react';
 import {BrowserRouter as Router, Route, Routes,useNavigate} from 'react-router-dom';
 import './App.css';
 import HomePage from './pages/homepage/homepage.component';
-
-const BoysPage = () => {
-  const history = useNavigate();
-  function move(e) {
-  e.preventDefault();
-  history('/');
-}
-  return(
-  <div className="name">
-    <h1>Boys Page Hello</h1>
-    <button onClick={move}>Home</button>
-  </div>)
-}
+import ShopPage from './pages/shop/Shop';
 
 function App() {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<HomePage/>} exact />
-        <Route path="/boys" element={<BoysPage/>} />
+        <Route path="/shop" element={<ShopPage/>} />
       </Routes>
     </Router> 
   );
