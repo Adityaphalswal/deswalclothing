@@ -1,8 +1,11 @@
 import React from 'react';
+import {useNavigate} from 'react-router-dom'
 
 import './menu-item.styles.scss';
 
-const MenuItem = ({ title, imageUrl, size }) => (
+const MenuItem = ({ title, imageUrl, size}) =>
+ {
+  return(
   <div className={`${size} menu-item`}>
     <div
       className='background-image'
@@ -15,6 +18,6 @@ const MenuItem = ({ title, imageUrl, size }) => (
       <span className='subtitle'>SHOP NOW</span>
     </div>
   </div>
-);
+)};
 
 export default MenuItem;
