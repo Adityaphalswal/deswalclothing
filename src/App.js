@@ -21,7 +21,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<HomePage/>} exact />
-        <Route path="/boy" element={<BoysPage/>} />
+        <Route path="/boys" element={<BoysPage/>} />
       </Routes>
     </Router> 
   );
