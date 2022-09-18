@@ -44,7 +44,7 @@ class App extends React.Component {
         <Header/>
         <Routes>
           <Route path="/" element={<HomePage/>} exact />
-          <Route path="/shop" element={<ShopPage/>} />
+          <Route path="/shop/*" element={<ShopPage/>} />
           {/* <Route exact path="/signin" element={<Sign/>} /> */}
           
           <Route exact path="/signin"
@@ -54,7 +54,6 @@ class App extends React.Component {
         </>
     );
   }
-  
 }
 
 const mapStateToProps = createStructuredSelector({
